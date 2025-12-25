@@ -46,14 +46,4 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          prompt: |
-            Repository: ${{ github.repository }}
-            Branch: ${{ github.ref_name }}
-            ${{ github.event.inputs.issue_number && format('Related Issue: #{0}', github.event.inputs.issue_number) || '' }}
-
-            Task: ${{ github.event.inputs.task }}
-
-            Instructions:
-            - Complete the task described above
-            - Create a new branch and commit your changes
-            - Provide a summary of what you did
+          prompt: ${{ github.event.inputs.task }}
