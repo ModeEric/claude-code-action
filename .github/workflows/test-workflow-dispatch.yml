@@ -49,4 +49,4 @@ jobs:
           prompt: ${{ github.event.inputs.task }}
           show_full_output: "true"
           claude_args: |
-            --allowedTools "LS,Read,Write,Edit,Replace"
+            --allowedTools "LS,Read,Write,Edit,Replace,Commit"
