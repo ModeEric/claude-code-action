@@ -14,7 +14,7 @@
 #     https://api.github.com/repos/OWNER/REPO/actions/workflows/workflow-dispatch.yml/dispatches \
 #     -d '{"ref":"main","inputs":{"task":"Add tests for utils.ts"}}'
 
-name: Run Claude Task
+name: 🚀 ERIC TEST - Run Claude Task
 
 on:
   workflow_dispatch:
